@@ -1,89 +1,273 @@
-<div class="team-wrapper">
-  <h3 class="team-heading">Team &amp; Collaborators</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyRespAI &mdash; Verifiable, Accountable &amp; Trustworthy AI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark">CR</span>
+        <span>CyRespAI</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#problem">The Problem</a>
+        <a href="#technology">Our Technology</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#applications">Applications</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Partner With Us</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="grid-3">
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/ehsan-memary.jpg" alt="Ehsan Memary" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: block;" onload="if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">EM</span>
-      </div>
-      <div>
-        <div class="team-role">Founder, CEO &amp; Solution Architect</div>
-        <h3>Ehsan Memary</h3>
-        <p><strong>Ph.D. in Computer Science</strong> &middot; Specialization in <strong>Cybersecurity &amp; AI</strong>. Leads overall architecture, protocol design, and verifiable AI solutions.</p>
-      </div>
-    </article>
+  <main>
+    <section class="dark-section hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Verifiable, Accountable &amp; <span>Trustworthy AI</span></h1>
+          <p class="hero-sub">
+            Proofs for AI behavior, fairness, and compliance without exposing private data or proprietary models.
+          </p>
+        </div>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/mahdieh-chavoshi.jpg" alt="Mahdieh (Liora) Chavoshi" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">MC</span>
+        <div class="hero-card">
+          <div class="hero-card-title">Verification Guarantees</div>
+          <div class="spec-item">
+            <span>Zero-Knowledge Proofs</span>
+            <span class="badge-ok">Privacy Preserved</span>
+          </div>
+          <div class="spec-item">
+            <span>Model &amp; Data Confidentiality</span>
+            <span class="badge-ok">IP Protected</span>
+          </div>
+          <div class="spec-item">
+            <span>Audit &amp; Compliance Trails</span>
+            <span class="badge-ok">Tamper-Evident</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="team-role">ZK Security Researcher &amp; Developer</div>
-        <h3>Mahdieh (Liora) Chavoshi</h3>
-        <p><strong>M.Sc. in Computer Engineering</strong> &middot; Develops and implements the ZK components of the architecture while evaluating zero-knowledge security.</p>
-      </div>
-    </article>
+    </section>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/nasim-khani.jpg" alt="Nasim Khani" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">NK</span>
+    <section id="problem" class="light-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">01 &middot; The Problem</div>
+          <h2>Why Trusting AI Systems Remains Hard</h2>
+          <p>
+            Organizations deploying AI in high-stakes environments face a tension between auditability and confidentiality.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-num">01</div>
+            <h3>Opaque Decision Making</h3>
+            <p>High-stakes AI models often operate as black boxes, making it difficult to verify fairness or policy adherence.</p>
+          </div>
+          <div class="card">
+            <div class="card-num">02</div>
+            <h3>Data &amp; IP Exposure</h3>
+            <p>Sharing raw datasets, weights, or prompts during third-party audits introduces privacy and intellectual property risks.</p>
+          </div>
+          <div class="card">
+            <div class="card-num">03</div>
+            <h3>Rising Regulatory Scrutiny</h3>
+            <p>Enterprises need verifiable evidence of compliance without slowing down model iteration or exposing sensitive logic.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="team-role">Cryptography &amp; AI Researcher</div>
-        <h3>Nasim Khani</h3>
-        <p><strong>M.Sc. in Mathematics</strong> &middot; Specialization in <strong>Cryptography &amp; AI</strong>. Trains and analyzes AI models, breaking down their behavior and insights for the team.</p>
-      </div>
-    </article>
+    </section>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/aria-naraghi.jpg" alt="Aria Naraghi" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">AN</span>
-      </div>
-      <div>
-        <div class="team-role">ZKP Researcher &amp; Developer</div>
-        <h3>Aria Naraghi</h3>
-        <p><strong>B.Sc. in Computer Science</strong> &middot; Researches and implements zero-knowledge proof protocols and verifiable computation workflows.</p>
-      </div>
-    </article>
+    <section id="technology" class="dark-section dark-block">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">02 &middot; Our Technology</div>
+          <h2>Cryptographic Verification for AI</h2>
+          <p>
+            Combining zero-knowledge proofs, model analysis, and verifiable workflows to prove properties of AI outputs.
+          </p>
+        </div>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/morteza-khedri.jpg" alt="Morteza Khedri" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">MK</span>
-      </div>
-      <div>
-        <div class="team-role">Blockchain Developer</div>
-        <h3>Morteza Khedri</h3>
-        <p><strong>B.Sc. in Economics</strong> &middot; Builds on-chain verification infrastructure, cryptographic settlement flows, and decentralized trust layers.</p>
-      </div>
-    </article>
+        <div class="grid-3">
+          <div class="dark-card">
+            <h3>ZK Proof Generation</h3>
+            <p>Generate succinct cryptographic proofs attesting that an inference or check satisfied defined rules.</p>
+          </div>
+          <div class="dark-card">
+            <h3>Model &amp; Policy Analysis</h3>
+            <p>Translate fairness, robustness, and compliance requirements into structured, verifiable checks.</p>
+          </div>
+          <div class="dark-card">
+            <h3>Verifiable Settlement &amp; Audit</h3>
+            <p>Allow auditors and partners to verify proofs independently without accessing underlying private assets.</p>
+          </div>
+        </div>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/maryam-mohammadi.jpg" alt="Maryam Mohammadi" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">MM</span>
+        <div class="demo-box">
+          <div class="demo-top">
+            <div>
+              <h3>Interactive Proof Simulation</h3>
+              <p style="color:#cbd5e1; font-size:0.9rem;">Select cells in the verification grid and generate a simulated proof.</p>
+            </div>
+            <div class="btn-row">
+              <button type="button" id="generate-proof-btn" class="btn-primary">Generate Proof</button>
+              <button type="button" id="reset-demo-btn" class="btn-secondary">Reset</button>
+            </div>
+          </div>
+          <div class="demo-grid-wrap">
+            <div id="zk-board" class="zk-board"></div>
+            <div class="proof-panel">
+              <strong>Verification Output</strong>
+              <div id="proof-log" class="proof-log">Ready. Select cells and click "Generate Proof".</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="team-role">Compliance &amp; Responsible AI</div>
-        <h3>Maryam Mohammadi</h3>
-        <p><strong>LL.M. / M.Sc. in Law</strong> &middot; Specialization in <strong>Compliance &amp; Responsible AI</strong>. Aligns technical verification with regulatory and ethical standards.</p>
-      </div>
-    </article>
+    </section>
 
-    <article class="card team-card">
-      <div class="team-photo-wrap" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img class="team-photo" src="assets/team/mina-motallebi.jpg" alt="Mina Motallebi" style="width: 84px; height: 84px; min-width: 84px; min-height: 84px; max-width: 84px; max-height: 84px; object-fit: cover; object-position: center top; font-size: 0; display: none;" onload="this.style.display='block'; if (this.nextElementSibling) this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
-        <span style="font-weight: 700; color: #2563eb;">MM</span>
+    <section id="how-it-works" class="tinted-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">03 &middot; How It Works</div>
+          <h2>From Model Execution to Verifiable Assurance</h2>
+          <span class="concept-banner">End-to-End Verification Flow</span>
+        </div>
+
+        <div class="flow-grid">
+          <div class="flow-step active-step" data-step="0">
+            <span class="step-badge">Step 01</span>
+            <h3>Define Policy</h3>
+            <p>Specify fairness, safety, or compliance constraints for the AI workflow.</p>
+          </div>
+          <div class="flow-step" data-step="1">
+            <span class="step-badge">Step 02</span>
+            <h3>Run &amp; Trace</h3>
+            <p>Execute model evaluation and capture structured computation commitments.</p>
+          </div>
+          <div class="flow-step" data-step="2">
+            <span class="step-badge">Step 03</span>
+            <h3>Prove in ZK</h3>
+            <p>Produce a zero-knowledge proof confirming rule satisfaction privately.</p>
+          </div>
+          <div class="flow-step" data-step="3">
+            <span class="step-badge">Step 04</span>
+            <h3>Verify &amp; Audit</h3>
+            <p>Check proof validity quickly and retain an auditable record.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="team-role">Compliance &amp; Responsible AI</div>
-        <h3>Mina Motallebi</h3>
-        <p><strong>LL.M. / M.Sc. in Law</strong> &middot; Specialization in <strong>Compliance &amp; Responsible AI</strong>. Aligns technical verification with regulatory and ethical standards.</p>
+    </section>
+
+    <section id="applications" class="light-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Applications &amp; Research Notes</div>
+          <h2>Practical Assurance Across Regulated Domains</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="insight-meta">Research Note &middot; ZK &amp; AI</div>
+            <h3>Bridging Privacy and Auditability in AI Systems</h3>
+            <p>Exploring how cryptographic proof techniques enable external verification without surrendering sensitive data or model IP.</p>
+          </div>
+          <div class="card">
+            <div class="insight-meta">Research Note &middot; AI Fairness</div>
+            <h3>Verifiable Fairness Without Exposing Sensitive Attributes</h3>
+            <p>Examining structured ways to test lending and decision criteria for fairness while respecting user data boundaries.</p>
+          </div>
+          <div class="card">
+            <div class="insight-meta">Research Note &middot; AI Compliance</div>
+            <h3>Lowering Audit Friction Through Cryptographic Assurance</h3>
+            <p>How verifiable proofs can complement traditional governance reviews across financial, healthcare, and enterprise AI.</p>
+          </div>
+        </div>
       </div>
-    </article>
-  </div>
-</div>
+    </section>
+
+    <section id="about" class="tinted-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">04 &middot; About CyRespAI</div>
+          <h2>Built at the Intersection of Cryptography, Cybersecurity &amp; Responsible AI</h2>
+          <p>
+            CyRespAI focuses on bringing cryptographic rigor to artificial intelligence assurance&mdash;helping organizations prove trustworthiness without compromising security or intellectual property.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Mission</h3>
+            <p>Make AI systems verifiable, accountable, and trustworthy through privacy-preserving cryptography.</p>
+          </div>
+          <div class="card">
+            <h3>Execution Model</h3>
+            <p>Connecting protocol design, zero-knowledge implementation, model analysis, on-chain verification, and regulatory alignment.</p>
+          </div>
+          <div class="card">
+            <h3>Collaborators &amp; Advisors</h3>
+            <p>Working with interdisciplinary researchers, auditors, and domain specialists across finance, healthcare, and AI governance.</p>
+          </div>
+        </div>
+
+        <div id="team-container"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="light-section">
+      <div class="container">
+        <div class="partner-box">
+          <div>
+            <div class="section-tag" style="color: var(--blue-400);">Partner With Us</div>
+            <h2>Build Verifiable AI Systems Together</h2>
+            <p style="color:#cbd5e1; margin-top:8px;">
+              Collaborate with CyRespAI on pilot evaluations, research partnerships, or enterprise AI assurance.
+            </p>
+            <ul class="partner-list">
+              <li><span class="dot"></span><span>Zero-knowledge proof architecture &amp; prototyping</span></li>
+              <li><span class="dot"></span><span>Model auditability &amp; compliance workflows</span></li>
+              <li><span class="dot"></span><span>Joint research &amp; domain pilots</span></li>
+            </ul>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@organization.com" />
+
+            <label for="topic">Inquiry Topic</label>
+            <select id="topic" name="topic">
+              <option value="Pilot / Evaluation">Pilot / Evaluation</option>
+              <option value="Research Collaboration">Research Collaboration</option>
+              <option value="Compliance &amp; Governance">Compliance &amp; Governance</option>
+              <option value="General Inquiry">General Inquiry</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3" required placeholder="How would you like to collaborate?"></textarea>
+
+            <button type="submit" class="btn-primary">Send Inquiry</button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 CyRespAI. All rights reserved.</span>
+      <span>cyrespai.com</span>
+    </div>
+  </footer>
+
+  <script src="js/zk-demo.js"></script>
+  <script src="js/flow-anim.js"></script>
+  <script src="js/team.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
